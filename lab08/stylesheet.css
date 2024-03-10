@@ -1,0 +1,48 @@
+body {
+    background-color: #f3f3f3;
+    color: #411f1f;
+    }
+body a {color: #86c4ba;}
+
+h1, h2, h3 {color: #170b07;}
+
+nav {
+    background-color: #a4b98e;
+    padding: 10px;
+    margin-bottom: 30px;
+    }
+nav a:hover {color: #f3f3f3;}
+nav a {color: #456e96;}
+
+.copyright {float: left;}
+.quote {float: right;}
+
+.row1 {
+    display: flex;
+    background-color: #cbb7a6;
+    border-radius: 1em;
+    margin: 10px;}
+.address {
+    flex: 1;
+    float: left; 
+    padding: 10px;}
+.linkedin {
+    flex: 3;
+    float: right;
+    padding: 10px;
+    line-height: 40px;}
+.linkedin a {color: #456e96}
+
+.row2 {
+    display: flex;
+    background-color: #af9f90;
+    border-radius: 1em;
+    margin: 10px;}
+.map {
+    flex: 3;
+    float: right;
+    padding: 10px;}
+.form {
+    flex: 1;
+    float: left;
+    padding: 10px;}
