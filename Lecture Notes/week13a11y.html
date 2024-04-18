@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a11y</title>
+    <style>
+        /* Don't forget the code within the HTML */
+        .skip {
+            background-color: #333333;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px;
+            border: 2px solid #b0e0e6;
+            position: absolute;
+            top: 10px;
+            left: -999px; /* push off left side of browser */}
+
+        .skip:focus {
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- tab order is for complex websites with a lot of stuff -->
+    <nav>
+        <a href="#skip" class="skip" tabindex="1">Skip to Content</a><br>
+        <a href="http://amazon.com" tabindex="4">Amazon</a><br>
+        <a href="http://google.com" tabindex="2">Google</a><br>
+        <a href="http://etsy.com" tabindex="3">Etsy</a><br>
+    </nav>
+    <h1>a11y HTML & CSS</h1>
+    <p id="skip">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id deleniti ipsam consectetur cumque iusto molestiae adipisci quaerat atque molestias ab, beatae animi saepe? Ipsum quo cupiditate expedita quibusdam necessitatibus ab.</p>
+</body>
+</html>
