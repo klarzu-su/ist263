@@ -1,5 +1,12 @@
 h1, h2 {text-align: center;}
-nav {text-align: center; justify-content: space-around;}
+nav {
+    text-align: center;
+    justify-content: space-around;
+    background-color: #132121;
+    padding: 20px;}
+
+nav a {padding: 30px; color: #ffffff}
+
 body {
     background-color: #eff3ee;
     font-family: Verdana, Geneva, Tahoma, sans-serif;}

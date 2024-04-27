@@ -7,30 +7,47 @@
     <title>Middlebrooks Family</title>
     <link rel="stylesheet" href="familystyle.css">
     <style>
-        .page, nav, footer {display: flex;}
+        @media only screen and (min-width:900px) {
+            #mobile {display: none;}
+            .page, nav, footer {display: flex;}
+            #mobiledate {display: none;}
+            .updates, .photos {
+                flex: 1;
+                margin: 10px;}
+            .reuniondesktop {flex: 2;
+            justify-content: center;}
+            nav {
+                padding-top: 50%;
+                padding: 10px;}
+            nav div {
+                padding: 10px;
+                flex: 1;}
+            nav div img {width: 75%;} 
+            #desktop {align-items: center;}}
+
+        @media only screen and (max-width: 900px) {
+            #desktop {display: none;}
+            #mobile {background-color: #132121;  padding: 20px;}
+            #mobile a {padding: 30px; color: #ffffff}
+            .reuniondesktop {display: none;}
+            #mobiledate {text-align: center;}
+        }
+
+
         .updates div {
             background-color:#2e5555;
             color: #ffffff;
             padding: 15px;
             border-radius: 10px;}
-        .updates, .photos {
-            flex: 1;
-            margin: 10px;}
-        .reunion {flex: 2;}
-        nav {
-            position: sticky;
-            top: 50%;
-            bottom: 50%;
-            padding: 10px;}
-        nav div {
-            padding: 10px;
-            flex: 1;}
-        div img {width: 75%}
-        footer {
-            background-color: #5b6746;
-            padding: 20px;
-            color: #ffffff;}
+
         .logo {width: 10%;}
+        
+        footer {
+                background-color: #5b6746;
+                padding: 20px;
+                color: #ffffff;}
+
+        h2 {padding-top: 50px;}
     </style>
 </head>
 <body>
@@ -41,8 +58,16 @@
         Middlebrooks Family
     </h1>
     <div class="page">
+        <nav id="mobile">
+            <a href="">Family Tree & History</a>
+
+            <a href="committee.html">Family Reunion Committee</a>
+
+            <a href="contact.html">Contacts</a>
+        </nav>
         <div class="updates">
-            <h2>Reunion</h2>
+            <h2>Notices</h2>
+            <h3 id="mobiledate">Next Reunion: XX/XX/XXXX</h3>
             <h3>Last Updated: XX/XX/XXXX</h3>
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corporis, veritatis sint similique mollitia soluta corrupti eveniet magnam voluptatum eligendi nemo illo fugiat culpa accusantium magni voluptate. Nulla, harum quasi!
@@ -55,9 +80,9 @@
             </div>
         </div> <!--end of 'updates'-->
 
-        <div class="reunion">
+        <div class="reuniondesktop">
             <h2>Next Reunion: XX/XX/XXXX</h2>
-            <nav>
+            <nav id="desktop">
                 <div>
                     <img src="../extra-media/family-tree.png" alt="family tree icon"><br>
                     <a href="">Family Tree & History
@@ -66,7 +91,7 @@
                         
                 </div>
                 <div>
-                    <img src="../extra-media/meeting.png" alt="Committee icon"><br>
+                    <img src="../extra-media/coworking.png" alt="Committee icon"><br>
                     <a href="committee.html">Family Reunion Committee
                         <h3>Meet the team that makes it all happen</h3>
                     </a>
@@ -74,7 +99,7 @@
                 </div>
                 <div>
                     <img src="../extra-media/contact-me.png" alt="contacts icon"><br>
-                    <a href="contact.html">Socials
+                    <a href="contact.html">Contacts
                         <h3>Find all the ways to reach out</h3>
                     </a>
                         
