@@ -19,7 +19,8 @@
             justify-content: center;}
             nav {
                 padding-top: 50%;
-                padding: 10px;}
+                padding: 10px;
+                background-color: #a3b8b0;}
             nav div {
                 padding: 10px;
                 flex: 1;}
@@ -50,11 +51,14 @@
 
         h2 {padding-top: 50px;}
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="C7SGc3R7"></script>
-    <h1>
+    <h1 class="ubuntu-medium">
         <img src="../family-media/middlebrooks-logo.jpeg" class="logo" alt="Middlebrooks Logo"><br>
         Middlebrooks Family
     </h1>
@@ -69,7 +73,7 @@
         <div class="updates">
             <h2>Notices</h2>
             <h3 id="mobiledate">Next Reunion: XX/XX/XXXX</h3>
-            <h3>Last Updated: XX/XX/XXXX</h3>
+            <h3 class="ubuntu-medium-italic">Last Updated: XX/XX/XXXX</h3>
             <div>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corporis, veritatis sint similique mollitia soluta corrupti eveniet magnam voluptatum eligendi nemo illo fugiat culpa accusantium magni voluptate. Nulla, harum quasi!
             </div><br>
@@ -84,26 +88,28 @@
         <div class="reuniondesktop">
             <h2>Next Reunion: XX/XX/XXXX</h2>
             <nav id="desktop">
-                <div>
-                    <img src="../extra-media/family-tree.png" alt="family tree icon"><br>
-                    <a href="">Family Tree & History
+                <div> 
+                    <a href="">
+                        <img src="../extra-media/family-tree.png" alt="family tree icon"><br>
+                        <label>Family Tree & History</label>
                         <h3>Get to know what we know about our wonderful family!</h3>
                     </a>
-                        
                 </div>
+
                 <div>
-                    <img src="../extra-media/coworking.png" alt="Committee icon"><br>
-                    <a href="committee.html">Family Reunion Committee
+                    <a href="committee.html">
+                        <img src="../extra-media/coworking.png" alt="Committee icon"><br>
+                        <label>Family Reunion Committee</label>
                         <h3>Meet the team that makes it all happen</h3>
-                    </a>
-                        
+                    </a>            
                 </div>
+
                 <div>
-                    <img src="../extra-media/contact-me.png" alt="contacts icon"><br>
-                    <a href="contact.html">Contacts
+                    <a href="contact.html">
+                        <img src="../extra-media/contact-me.png" alt="contacts icon"><br>
+                        <label>Contacts</label>
                         <h3>Find all the ways to reach out</h3>
-                    </a>
-                        
+                    </a>   
                 </div>
             </nav>
         </div> <!--end of 'reunion'-->
