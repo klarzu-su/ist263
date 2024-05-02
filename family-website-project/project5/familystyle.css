@@ -1,11 +1,13 @@
 h1, h2 {text-align: center;}
 nav {
+    display: flex;
+    background-color: #132121; 
+    padding: 10px;
     text-align: center;
-    justify-content: space-around;
-    background-color: #132121;
-    padding: 20px;}
+    justify-content:space-evenly;
+    padding: 10px;}
 
-nav a {padding: 30px; color: #ffffff; text-align: center;}
+nav a {padding: 10px; color: #ffffff; text-align: center;}
 
 body {
     background-color: #eff3ee;
@@ -27,7 +29,9 @@ label {text-align: center;}
     font-style: italic;
   }
 
-p {font-size: 30px; text-decoration: underline;}
+p {margin: 0; padding: 0;}
+
+.logo {width: 10%;}
 
 footer {
   background-color: #132121;

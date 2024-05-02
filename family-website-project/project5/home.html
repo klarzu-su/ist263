@@ -9,51 +9,52 @@
     <link rel="stylesheet" href="familystyle.css">
     <style>
         @media only screen and (min-width:901px) {
-            #mobile {display: none;}
-            .page, nav, footer,.photos {display: flex;}
+            #mobile-nav {display: none;}
+            .page, #desktop-nav, footer,.photos {display: flex;}
             #mobiledate {display: none;}
             .updates {
                 flex: 1;
                 margin: 10px;}
-
-            .updates div {align-items: stretch;}
-
             .reuniondesktop, .photos{
                 flex: 3;
                 justify-content: center;}
-            nav {
+            #desktop-nav {
                 padding-top: 50%;
                 padding: 10px;
                 background-color: #a3b8b0;}
-            nav div {
+            #desktop-nav div {
                 padding: 10px;
                 flex: 1;}
-            nav div img {width: 75%;} 
+            #desktop-nav div img {width: 75%;} 
             .fb-root {justify-content: center;}
-            #desktop a {text-decoration: none;}
-            #desktop {margin: 25px;border-radius: 30px;}
+            #desktop-nav a {text-decoration: none;}
+            #desktop-nav {margin: 25px;border-radius: 30px;}
+            #desktop-nav p {font-size: 30px; text-decoration: underline;}
         }
 
         @media only screen and (max-width: 900px) {
-            #desktop, #desktop-date {display: none;}
-            #mobile {display: flex; background-color: #132121; padding: 10px; justify-content: center;}
-            #mobile a { color: #ffffff; justify-content: space-between;}
+            #desktop-nav, #desktop-date {display: none;}
+            #mobile-nav a { color: #ffffff; justify-content: space-around;}
             #mobiledate {text-align: center;}
             .photos {display: flex; justify-content: center;}
+            
         }
 
         @media only screen and (max-width: 625px) {
-            #mobile a {font-size: 3vw;}
+            #mobile-nav a {font-size: 3vw;}
         }
 
         .updates div {
             background-color:#2e5555;
             color: #ffffff;
-            padding: 25px;
+            padding: 20px;
             border-radius: 10px;
-            font-size: 1.7vw;}
+            font-size: 3vw;}
 
-        .logo {width: 10%;}
+        .updates p {font-size: 20px;}
+
+
+        
 
         h2 {padding-top: 50px;}
     </style>
@@ -70,7 +71,7 @@
         <img src="../family-media/middlebrooks-logo.jpeg" class="logo" alt="Middlebrooks Logo"><br>
         Middlebrooks Family
     </h1>
-        <nav id="mobile">
+        <nav id="mobile-nav">
             <a href="">Family Tree & History</a><br>
 
             <a href="committee.html">Family Reunion Committee</a><br>
@@ -84,19 +85,25 @@
             <h3 id="mobiledate">Next Reunion: XX/XX/XXXX</h3>
             <h3 class="ubuntu-medium-italic">Last Updated: XX/XX/XXXX</h3>
             <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corporis, veritatis sint similique mollitia soluta corrupti eveniet magnam voluptatum eligendi nemo illo fugiat culpa accusantium magni voluptate. Nulla, harum quasi!
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus corporis, veritatis sint similique mollitia soluta corrupti eveniet magnam voluptatum eligendi nemo illo fugiat culpa accusantium magni voluptate. Nulla, harum quasi!
+                </p>
             </div><br>
             <div>  
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus asperiores earum, doloremque, perspiciatis vel rerum ut laboriosam nulla accusantium, cumque molestiae eaque tempora. Delectus ducimus accusamus sed autem provident
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptatibus asperiores earum, doloremque, perspiciatis vel rerum ut laboriosam nulla accusantium, cumque molestiae eaque tempora. Delectus ducimus accusamus sed autem provident
+                </p>
             </div><br>
             <div>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique delectus maiores error temporibus adipisci quos est iusto consequatur explicabo perspiciatis quam cupiditate quasi cum, atque veniam pariatur tenetur autem dolore.<br>
-            </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique delectus maiores error temporibus adipisci quos est iusto consequatur explicabo perspiciatis quam cupiditate quasi cum, atque veniam pariatur tenetur autem dolore.
+                </p>    
+            </div><br>
         </div> <!--end of 'updates'-->
 
         <div class="reuniondesktop">
             <h2 id="desktop-date">Next Reunion: XX/XX/XXXX</h2>
-            <nav id="desktop">
+            <nav id="desktop-nav">
                 <div> 
                     <a href="">
                         <img src="../extra-media/family-tree.png" alt="family tree icon"><br>
