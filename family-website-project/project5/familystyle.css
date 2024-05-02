@@ -9,7 +9,9 @@ nav a {padding: 30px; color: #ffffff; text-align: center;}
 
 body {
     background-color: #eff3ee;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;}
 
 label {text-align: center;}
 
@@ -24,4 +26,12 @@ label {text-align: center;}
     font-weight: 500;
     font-style: italic;
   }
-  
+
+p {font-size: 30px; text-decoration: underline;}
+
+footer {
+  background-color: #132121;
+  padding: 20px;
+  color: #ffffff;}
+
+.page {margin: 10px;}

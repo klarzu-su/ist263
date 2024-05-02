@@ -8,15 +8,19 @@
     <link rel="shortcut icon" type="image/x-icon" href="../extra-media/favicon.ico">
     <link rel="stylesheet" href="familystyle.css">
     <style>
-        @media only screen and (min-width:900px) {
+        @media only screen and (min-width:901px) {
             #mobile {display: none;}
-            .page, nav, footer {display: flex;}
+            .page, nav, footer,.photos {display: flex;}
             #mobiledate {display: none;}
-            .updates, .photos {
+            .updates {
                 flex: 1;
                 margin: 10px;}
-            .reuniondesktop {flex: 2;
-            justify-content: center;}
+
+            .updates div {align-items: stretch;}
+
+            .reuniondesktop, .photos{
+                flex: 3;
+                justify-content: center;}
             nav {
                 padding-top: 50%;
                 padding: 10px;
@@ -25,51 +29,56 @@
                 padding: 10px;
                 flex: 1;}
             nav div img {width: 75%;} 
-            #desktop {align-items: center;}}
-
-        @media only screen and (max-width: 900px) {
-            #desktop {display: none;}
-            #mobile {background-color: #132121;  padding: 20px;}
-            #mobile a {padding: 30px; color: #ffffff}
-            .reuniondesktop {display: none;}
-            #mobiledate {text-align: center;}
+            .fb-root {justify-content: center;}
+            #desktop a {text-decoration: none;}
+            #desktop {margin: 25px;border-radius: 30px;}
         }
 
+        @media only screen and (max-width: 900px) {
+            #desktop, #desktop-date {display: none;}
+            #mobile {display: flex; background-color: #132121; padding: 10px; justify-content: center;}
+            #mobile a { color: #ffffff; justify-content: space-between;}
+            #mobiledate {text-align: center;}
+            .photos {display: flex; justify-content: center;}
+        }
+
+        @media only screen and (max-width: 625px) {
+            #mobile a {font-size: 3vw;}
+        }
 
         .updates div {
             background-color:#2e5555;
             color: #ffffff;
-            padding: 15px;
-            border-radius: 10px;}
+            padding: 25px;
+            border-radius: 10px;
+            font-size: 1.7vw;}
 
         .logo {width: 10%;}
-        
-        footer {
-                background-color: #5b6746;
-                padding: 20px;
-                color: #ffffff;}
 
         h2 {padding-top: 50px;}
     </style>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="C7SGc3R7"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="XjQKzLD8"></script>
     <h1 class="ubuntu-medium">
         <img src="../family-media/middlebrooks-logo.jpeg" class="logo" alt="Middlebrooks Logo"><br>
         Middlebrooks Family
     </h1>
-    <div class="page">
         <nav id="mobile">
-            <a href="">Family Tree & History</a>
+            <a href="">Family Tree & History</a><br>
 
-            <a href="committee.html">Family Reunion Committee</a>
+            <a href="committee.html">Family Reunion Committee</a><br>
 
             <a href="contact.html">Contacts</a>
         </nav>
+    <div class="page">
+        
         <div class="updates">
             <h2>Notices</h2>
             <h3 id="mobiledate">Next Reunion: XX/XX/XXXX</h3>
@@ -86,12 +95,12 @@
         </div> <!--end of 'updates'-->
 
         <div class="reuniondesktop">
-            <h2>Next Reunion: XX/XX/XXXX</h2>
+            <h2 id="desktop-date">Next Reunion: XX/XX/XXXX</h2>
             <nav id="desktop">
                 <div> 
                     <a href="">
                         <img src="../extra-media/family-tree.png" alt="family tree icon"><br>
-                        <label>Family Tree & History</label>
+                        <p>Family Tree & History</p>
                         <h3>Get to know what we know about our wonderful family!</h3>
                     </a>
                 </div>
@@ -99,7 +108,7 @@
                 <div>
                     <a href="committee.html">
                         <img src="../extra-media/coworking.png" alt="Committee icon"><br>
-                        <label>Family Reunion Committee</label>
+                        <p>Family Reunion Committee</p>
                         <h3>Meet the team that makes it all happen</h3>
                     </a>            
                 </div>
@@ -107,30 +116,20 @@
                 <div>
                     <a href="contact.html">
                         <img src="../extra-media/contact-me.png" alt="contacts icon"><br>
-                        <label>Contacts</label>
+                        <p>Contacts</p>
                         <h3>Find all the ways to reach out</h3>
                     </a>   
                 </div>
             </nav>
-        </div> <!--end of 'reunion'-->
-
-        <div class="photos">
             <h2>Follow Us on Facebook!</h2>
-            <div class="fb-post" data-href="https://www.facebook.com/hoodiehugs/posts/pfbid04qUHvB4AB6MduGm1bcuyEidYV19GEZ59hbXDbAzzXbaW6ZCsESKvgJ2rtkkE1WVdl" data-width="" data-show-text="true"><blockquote cite="https://www.facebook.com/hoodiehugs/posts/432062322702028" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/hoodiehugs">Kaitlyn Arzu</a> on&nbsp;<a href="https://www.facebook.com/hoodiehugs/posts/432062322702028">Wednesday, April 10, 2024</a></blockquote></div>
-           
-        </div> <!--end of 'photos'-->
+            <div class="photos">
+                <div class="fb-post" data-href="https://www.facebook.com/hoodiehugs/posts/pfbid028PEXqMzDJN66WCUzX8TK4WQ8ZBuYKZhYQiwybCMvNhy4qyxxfCdAQ8YGK7iEdeR9l" data-width="" data-show-text="false"><blockquote cite="https://www.facebook.com/hoodiehugs/posts/432062322702028" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/hoodiehugs">Kaitlyn Arzu</a> on&nbsp;<a href="https://www.facebook.com/hoodiehugs/posts/432062322702028">Wednesday, April 10, 2024</a></blockquote></div>
+            </div>
+        </div> <!--end of 'reunion'-->
     </div> <!--end of 'page'-->
 
     <footer>
-        <div>
-    Family Tree Icon:<br>
-        <a href="https://www.flaticon.com/free-icons/dna" title="dna icons">Dna icons created by Smashicons - Flaticon</a><br>
-    
-    Committee Icon:<br>
-        <a href="https://www.flaticon.com/free-icons/interview" title="interview icons">Interview icons created by Freepik - Flaticon</a><br>
-
-    Contact Icon:<br>
-        <a href="https://www.flaticon.com/free-icons/contact-me" title="contact me icons">Contact me icons created by Freepik - Flaticon</a></div>
+        &copy; 2024 Middlebrooks Family Website
     </footer>
 </body>
 </html>
