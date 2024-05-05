@@ -50,7 +50,7 @@ footer {
   border: 2px solid #b0e0e6;
   position: absolute;
   top: 10px;
-  left: -999px; /* push off left side of browser */}
+  left: -9999px; /* push off left side of browser */}
 
 .skip:focus {
   left: 10px;}
