@@ -4,10 +4,10 @@ nav {
     background-color: #132121; 
     padding: 10px;
     justify-content:space-evenly;
-    padding: 10px;
-    align-items: center;}
+    align-items: center;
+    text-decoration: underline #ffffff;}
 
-nav a {padding: 10px; color: #ffffff;
+nav a {padding: 10px; color: #ffffff; text-align: center;
   }
 
 body {
