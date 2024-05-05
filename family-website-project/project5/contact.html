@@ -19,8 +19,8 @@
         #facebooklogo {width: 15%;}
         #instalogo {width: 15%}
         #ytlogo {width: 20%}
-        dt {margin: 30px; font-size: 50px;}
-        dd {margin-left: 120px; font-size: 20px; padding-bottom: 30px;}
+        #facebook-text, #insta-text, #yt-text {margin: 30px; font-size: 50px;}
+        .dd {margin-left: 120px; font-size: 20px; padding-bottom: 30px;}
         .aside {
             padding: 30px;
             background-color: #a3b8b0;
@@ -29,7 +29,7 @@
             flex: 3;
             align-items: center;}
 
-        dl {flex: 7;}
+        .dl {flex: 7;}
         .page {margin-top: 100px;}
         .submit {justify-self: center;}
         h2 {justify-content: center; font-size: 3vw;}
@@ -60,17 +60,17 @@
     <div class="page"> 
         <h2 id="desktop">Follow all of our socials to never miss a thing!</h2>
         <div id="flex">
-            <dl>
+            <div class="dl">
                 <h2 id="mobile">Follow all of our socials to never miss a thing!</h2>
-                <dt class="ubuntu-medium-italic" id="facebook-text"><a href="https://www.facebook.com/middlebrooksfamily"><img src="../../images/Facebook Brand Asset Pack/Logo/primary Logo/Facebook_Logo_Primary.png" alt="Facebook logo" id="facebooklogo">Facebook</dt>
-                    <dd> > Family members can join out Facebook group for more personal updates</dd></a>
+                <div class="ubuntu-medium-italic" id="facebook-text"><a href="https://www.facebook.com/middlebrooksfamily"><img src="../../images/Facebook-Brand-Asset-Pack/Logo/Primary-Logo/Facebook_Logo_Primary.png" alt="Facebook logo" id="facebooklogo">Facebook</a></div>
+                    <div class="dd"> > Family members can join out Facebook group for more personal updates</div>
 
-                <dt class="ubuntu-medium-italic"><img src="../../images/01 Static Glyph/01 Gradient Glyph/Instagram_Glyph_Gradient.png" alt="Instagram logo" id="instalogo"> Instagram</dt>
-                    <dd> > Currently inactive</dd>
+                <div class="ubuntu-medium-italic" id="insta-text"><img src="../../images/Insta-Logos/Gradient/Instagram_Glyph_Gradient.png" alt="Instagram logo" id="instalogo"> Instagram</div>
+                    <div class="dd"> > Currently inactive</div>
 
-                <dt class="ubuntu-medium-italic"><img src="../../images/youtube_monochrome_dark_icon/social/128px/dark/youtube_social_icon_dark.png" alt="YouTube logo" id="ytlogo"> YouTube</dt>
-                    <dd> > Currently inactive</dd>
-            </dl>
+                <div class="ubuntu-medium-italic" id="yt-text"><img src="../../images/youtube_monochrome_dark_icon/social/128px/dark/youtube_social_icon_dark.png" alt="YouTube logo" id="ytlogo"> YouTube</div>
+                    <div class="dd"> > Currently inactive</div>
+            </div> <!--end of 'dl'-->
             <div class="aside">
                 <form action="https://formspree.io/f/xoqgrywa" method="POST">
                     <h3>Subscribe for updates!</h3>
