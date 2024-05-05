@@ -5,7 +5,8 @@ nav {
     padding: 10px;
     justify-content:space-evenly;
     align-items: center;
-    text-decoration: underline #ffffff;}
+    text-decoration: underline #ffffff;
+    text-align: center;}
 
 nav a {padding: 10px; color: #ffffff; text-align: center;
   }
