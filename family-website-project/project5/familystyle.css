@@ -3,12 +3,12 @@ nav {
     display: flex;
     background-color: #132121; 
     padding: 10px;
-    text-align: center;
     justify-content:space-evenly;
     padding: 10px;
     align-items: center;}
 
-nav a {padding: 10px; color: #ffffff; text-align: center;}
+nav a {padding: 10px; color: #ffffff;
+  }
 
 body {
     background-color: #eff3ee;

@@ -5,9 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Family Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../extra-media/favicon.ico">
     <link rel="stylesheet" href="https://klarzu-su.github.io/ist263/family-website-project/project5/familystyle.css">
     <style>
+        @media only screen and (max-width: 900px) {
+        .aside {display: flex;}
+        #desktop {display: none}}
 
+        @media only screen and (min-width:901px){
+            #flex {display: flex;}
+            #mobile {display: none}
+        }
+        #facebooklogo {width: 15%;}
+        #instalogo {width: 15%}
+        #ytlogo {width: 20%}
+        dt {margin: 30px; font-size: 50px;}
+        dd {margin-left: 120px; font-size: 20px; padding-bottom: 30px;}
+        .aside {
+            padding: 30px;
+            background-color: #a3b8b0;
+            border-radius: 20px;
+            margin: 15px;
+            flex: 3;
+            align-items: center;}
+
+        dl {flex: 7;}
+        .page {margin-top: 100px;}
+        .submit {justify-self: center;}
+        h2 {justify-content: center; font-size: 3vw;}
+        form {justify-content: center;}
+        input {border-radius: 20px;}
+        h3 {font-size: 2vw; text-align: center;}
+        .formitem {margin: 20px;}
+        a {text-decoration: none;}
+        #facebook-text {text-decoration: underline #0000ff;}
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 </head>
@@ -16,15 +47,49 @@
         <img src="../family-media/middlebrooks-logo.jpeg" class="logo" alt="Middlebrooks Logo"><br>
         Middlebrooks Family
     </h1>
-    <div class="page">
-        <nav>
-            <a href="home.html">Home & Notices</a><br>
+    <nav>
+        <a href="home.html">Home & Notices</a><br>
 
-            <a href="">Family Tree & History</a>
+        <a href="">Family Tree & History</a>
 
-            <a href="committee.html">Family Reunion Committee</a>
+        <a href="committee.html">Family Reunion Committee</a>
 
-            <a href="contact.html">Contacts</a>
-        </nav>
+        <a href="contact.html">Contacts</a>
+    </nav>
+    
+    <div class="page"> 
+        <h2 id="desktop">Follow all of our socials to never miss a thing!</h2>
+        <div id="flex">
+            <dl>
+                <h2 id="mobile">Follow all of our socials to never miss a thing!</h2>
+                <dt class="ubuntu-medium-italic" id="facebook-text"><a href="https://www.facebook.com/middlebrooksfamily"><img src="../../images/Facebook Brand Asset Pack/Logo/Primary Logo/Facebook_Logo_Primary.png" alt="Facebook logo" id="facebooklogo">Facebook</dt>
+                    <dd> > Family members can join out Facebook group for more personal updates</dd></a>
+
+                <dt class="ubuntu-medium-italic"><img src="../../images/01 Static Glyph/01 Gradient Glyph/Instagram_Glyph_Gradient.png" alt="Instagram logo" id="instalogo"> Instagram</dt>
+                    <dd> > Currently inactive</dd>
+
+                <dt class="ubuntu-medium-italic"><img src="../../images/youtube_monochrome_dark_icon/social/128px/dark/youtube_social_icon_dark.png" alt="YouTube logo" id="ytlogo"> YouTube</dt>
+                    <dd> > Currently inactive</dd>
+            </dl>
+            <div class="aside">
+                <form action="https://formspree.io/f/xoqgrywa" method="POST">
+                    <h3>Subscribe for updates!</h3>
+                    <h4>Get an email from us any time we have family reunion updates</h4>
+
+                    <div class="formitem">
+                        <label for="fullname">Name:</label><br>
+                        <input type="text" id="fullname" name="fullname"><br>
+                    </div>
+                    <div class="formitem">
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email"><br>
+                    </div>
+                    <div class="formitem">
+                        <input type="submit" value="Send Form" class="submit">
+                    </div>
+                </form>
+            </div><!--end of 'aside'-->
+        </div>
+    </div><!--end of 'page'-->
 </body>
 </html>
